@@ -13,7 +13,7 @@ export default function SamplePage({title, children}) {
             position: "relative"
         }}>
             <div style={{
-                width: "50vw",
+                width: "60vw",
                 position: "relative",
                 textAlign: "center"
             }}>
