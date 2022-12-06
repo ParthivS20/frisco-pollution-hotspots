@@ -53,3 +53,11 @@ body {
 nav {
   height: 80px;
 }
+
+.link:link {
+  color: #02881f;
+}
+
+.link:visited {
+  color: #003f10;
+}

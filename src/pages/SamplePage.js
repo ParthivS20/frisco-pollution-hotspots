@@ -8,10 +8,18 @@ export default function SamplePage({title, children}) {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            height: '90vh'
+            height: '90vh',
+            width: "100vw",
+            position: "relative"
         }}>
-            <Title title={title} />
-            <h1 style={{color:"white"}}>{children}</h1>
+            <div style={{
+                width: "50vw",
+                position: "relative",
+                textAlign: "center"
+            }}>
+                <Title title={title} />
+                <h1 style={{color:"white"}}>{children}</h1>
+            </div>
         </div>
     )
 

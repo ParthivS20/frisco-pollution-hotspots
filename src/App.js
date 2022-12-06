@@ -56,8 +56,26 @@ function App() {
                                                            selectedLocation={selectedLocation}
                                                            setSelectedLocation={setSelectedLocation} defaultMapView={defaultMapView}/>}/>
                     <Route path={"/contact"} element={<Contact userEmail={user ? user.email : ''}/>}/>
-                    <Route path={"/contact-form-success"} element={<ContactFormSuccess/>}/>
-                    <Route path={"/contact-form-error"} element={<ContactFormError/>}/>
+                    <Route path={"/contact-form-success"} element={<ContactFormSuccess />}/>
+                    <Route path={"/contact-form-error"} element={<ContactFormError />}/>
+                    <Route
+                        path={"/about"}
+                        element={<SamplePage title={"About"}>Explore. Design. Solve! is an organization committed to making the community a better place. Frisco Pollution Hotspots is a project by the Centennial HS Chapter of EDS that aims to make Frisco, TX a cleaner place. The app works by crowdsourcing data from users around the city and intuitively places markers around a map of Frisco to indicate places of high pollution. Users can then choose to volunteer to help clean up an area.</SamplePage>}
+                    />
+                    <Route
+                        path={"/opportunities"}
+                        element={
+                        <SamplePage title={"opportunities"}>
+                            <div style={{
+                                display: "flex",
+                                flexDirection: "column",
+                                gap:"4px"
+                            }}>
+                                {"Please report any pollution hotspots here: "}
+                                <a className={"link"} target="_blank" href={'https://docs.google.com/forms/d/e/1FAIpQLScy0oDV8ZR4-bjmzD0sQnP6F750WCfgDGH-szOb8JtYEcLtlA/viewform'} rel="noreferrer">Submission Form</a>
+                            </div>
+                        </SamplePage>}
+                    />
                     <Route
                         path="*"
                         element={<SamplePage title={"404"}>404 Page Not Found</SamplePage>}
